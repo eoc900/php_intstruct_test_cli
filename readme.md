@@ -29,7 +29,7 @@ o And so on…
 For example run:
 
 ```
-php index.php get_service_by_country uk
+php index.php get_service_by_country gb
 
 ```
 
