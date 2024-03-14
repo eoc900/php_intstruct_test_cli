@@ -13,7 +13,7 @@ class FileTest extends TestCase{
 
         $csv = new CSV_Query("services.csv","csv");
 
-        $this->assertFileExists(dirname(__DIR__).'/../'.'services.csv');
+        $this->assertFileExists(dirname(__DIR__).'/../'.$csv->fileName);
 
     }
 
