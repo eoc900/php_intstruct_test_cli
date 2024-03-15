@@ -19,17 +19,13 @@ if(isset($argv[1])){
 
         // TASK #1
         if(CleanData::transformTo($command,"lower")=="get_service_by_country" && isset($argv[2])){
-            echo "Here are the following services for the following country: ".$argv[2]." \n";
-            $results = $query->getByCountryCode(CleanData::transformTo($argv[2],"lower"));
-            print_r($results);
+            $query->displayServicesByCountry($query,$argv[2]);
             exit;
         }
 
          // TASK #2
         if(CleanData::transformTo($command,"lower")=="service_summary"){
-            echo "Total of services by country ".$argv[1]." \n";
-            $results = $query->getSummaryOfRegions();
-            print_r($results);
+            $query->displaySummary($query);
             exit;
         }
 
@@ -37,12 +33,6 @@ if(isset($argv[1])){
 
     exit;
 }
-
-
-
-
-
-
 
 
 //3.  In case that the user doesn't provide intructions
