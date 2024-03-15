@@ -11,8 +11,9 @@
 
 1. Once the project is downloaded from github,
    cd command to the project directory in your terminal.
+   Run:
    ```
-   Run composer install
+   composer install
    ```
 
 3. Type:
