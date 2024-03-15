@@ -10,9 +10,12 @@
 ### How to use the program:
 
 1. Once the project is downloaded from github,
-   cd command to the project directory in your terminal. **Run composer install**
+   cd command to the project directory in your terminal.
+   ```
+   Run composer install
+   ```
 
-2. Type:
+3. Type:
 
 php index.php **instruction** :
 
