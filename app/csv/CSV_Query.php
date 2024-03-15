@@ -78,6 +78,21 @@ class CSV_Query{
         return $results;
     }
 
+    public function displayServicesByCountry($obj,$countryCode){
+
+        $results = $obj->getByCountryCode(CleanData::transformTo($countryCode,"lower"));
+        $cc = $countryCode;
+        include_once __DIR__."/../views/servicesByCountry.php";
+
+    }
+
+     public function displaySummary($obj){
+
+        $results = $obj->getSummaryOfRegions();
+        include_once __DIR__."/../views/summary.php";
+
+    }
+
 }
 
 ?>
